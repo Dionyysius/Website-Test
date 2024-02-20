@@ -6,20 +6,131 @@
     <title>Koenigsegg</title>
 
     <style>
-        
+        body{
+            background-color: black;
 
+        }
+        .content{
+            grid-area: content;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background: linear-gradient(to right,rgba(200,107,142,1),rgba(218,105,250,1),rgba(110,125,253,1));
+            justify-content: center;
+        }
+        .container{
+            font-size: 1.5em;
+            width: 100%;
+            height: 100;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 'sidebar' 'content' 'foodter';
+            grid-template-columns: 1fr;
+            grid-template-rows: 130px 800px 250px ;
+        }
+
+        .content,.sidebar{
+            padding: 1em;
+        }
+
+        .action-bin{
+            display: inline-block;
+        }
+        .sidebar {
+    background: linear-gradient(
+      
+      rgba(155,129,0),
+      rgba(255,195,77),
+      rgb(255,43,0)
+    );
+    padding-top: 10em;
+  }
+  nav li a:hover {
+  opacity: 1;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+ 
+nav li {
+  list-style: none;
+  padding: 1em 0;
+}
+ 
+nav li a {
+  color: white;
+  font-weight: 700;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+ 
+nav li a:hover {
+  opacity: 1;
+}
+
+.hero {
+  max-width: 90 px;
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.hero img {
+  width: 200px;
+}
+ 
+.hero h1 {
+  font-size: 2em;
+  font-weight: 300;
+  color: #373046;
+}
+ 
+.hero p {
+  font-weight: 300;
+  line-height: 1.3em;
+  color: #98abad;
+}
+.container {
+    grid-template-areas: 'sidebar content' 'sidebar footer';
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 300px 1f;
+  }
+ 
 
     </style>
 </head>
-<body style="background-color:black;">
 
-    <header>
-        <h1 style="color: orangered;">Selamat Datang di HTML</h1>
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul style="font-family: 'Times New Roman', Times, serif;">
+                <li><a href="">About</a></li>
+                <li><a href="">Portofolio</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+
+            </ul>
+
+
+        </nav>
+    </div>
+    <main class="content">
+    <section class="hero">
+
+</body>
+<body>
+
+    <header style="background-color: orangered;">
+        <h1 style="color: white;">Selamat Datang di HTML</h1>
     </header>
 
     <section >
         <h2>gambar</h2>
-        <center><img src="Christian-Von-Koenigsegg.jpg" alt="Contoh Gambar" style="height: 600px ; width:400px ; "> <center>
+        <center><img src="Christian-Von-Koenigsegg.jpg" alt="Contoh Gambar" style="height: 600px ; width:600px ; "> <center>
         
         <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: aliceblue;">Ini adalah gambar Christian-Von-Koenigsegg.</p>
     </section>
