@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example</title>
+
+        <style>
+            html{
+                --fixedHeaderY:0px;
+                font-family: sans-serif;
+                font-size: 62.5%;
+                box-sizing: border-box;
+                background: black;
+                color: aliceblue;
+                -webkit-tab-highlight-color:white;
+                line-height: 1.15;
+                -webkit-text-size-adjust: 100%;
+            }
+            [data-component=n1-main-navigation] .navigation-wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .grid-gutter{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .site-logo img {
+            height: 10rem;
+            width: 15.875rem;
+            position: relative;
+            pointer-events: auto;
+            z-index: 3;
+        }
+            [data-component=n1-main-navigation] .site-logo img{
+                height: 4rem;
+                width: 15.875rem;
+                position: relative;
+                pointer-events: auto;
+                z-index: 3;
+            }
+            [data-component=icon-1]{
+                height: 2.4rem;
+                width: 2.4rem;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body class="front-page" style="--navigationHeight: 138.75px; --stickyVisibility: 0;">
+        <nav>
+            <div data-ref="fixed-wrapper" style="opacity: 1; visibility: inherit;">
+                <span data-ref="background" class="background"></span>
+
+
+            
+             <div data-ref="--navigation-wrapper" class="grid-navigation">
+                <a href="" target="_self" aria-label="click to return" class="logo" data-ref="">
+                    <span data-component="icon-1" data-name="koenigsegg" class="site-logo"> 
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dkoenigsegg%2BLogo&psig=AOvVaw0m7ymoxg9F6yNnyRUDVslM&ust=1708522282572000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOD16tCDuoQDFQAAAAAdAAAAABAI" >
+                        
+                    </span>
+                </a>
+
+
+
+            </div>
+            </div>
+         </nav>
+
+    </body>
+
+</html>
